@@ -5,3 +5,6 @@ const menu = document.getElementById(`menu`);
 menu_icon.addEventListener(`click`, ()=>{
     menu.classList.toggle(`menu--active`);
 })
+
+const form = document.getElementById("from");
+

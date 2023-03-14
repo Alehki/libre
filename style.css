@@ -204,7 +204,7 @@ section{
 
 
 .productos{
-    background-color: rgb(145, 226, 63);
+    background-color: rgb(174, 207, 141);
 }
 
 
@@ -232,9 +232,17 @@ section{
     gap: 50px;
 }
 
+.productos{
+    position: relative;
+    z-index: -1;
+}
+
 .card{
+    position: relative;
+    z-index: -1;
     width: 300px;
     box-shadow: 1px 1px 4px black;
+    background-color: white;
 }
 
 @media screen and (min-width: 924px) {
@@ -245,6 +253,7 @@ section{
 
 .card__img{
     max-width: 100%;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.572);
 }
 
 .card__title{
@@ -252,7 +261,7 @@ section{
     font-size: 1rem;
 }
 .card__description{
-    padding: .4em 1em;
+    padding: .8em 1em;
 }
 
 @media screen and (min-width: 924px) {
@@ -260,6 +269,16 @@ section{
         font-size: .9rem;
         line-height: 1.2;
     }
+}
+
+span{
+    padding-left: 10px;
+    font-size: 1rem;
+    cursor:pointer;
+    font-weight: 600;
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
 }
 
 /* formulario */

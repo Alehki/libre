@@ -27,7 +27,7 @@
             <h1 class="title">¡Nuestra veterinaria los espera!</h1>
             <article class="article-inicio">
                 <h2 class="subtitle">Lo que necesitas saber</h2>
-                <p class="inicio-description">Somos la veterinaria numero 1 en el pais. Veni y trae a tu caniño, quedará en exelentes ccondiciones. Ofrecemos servicios de limpieza, corte de pelo, y mucho mas</p>
+                <p class="inicio-description">Somos <strong>la veterinaria numero 1 en el pais.</strong> Veni y trae a tu caniño, quedará en exelentes ccondiciones. Ofrecemos servicios de limpieza, corte de pelo, y mucho mas</p>
                 <p class="llama">Llama al <a href="tel:1122736792" class="tel"> 11-2273-6792</a> y asesorate con nosotros</p>
             </article>
         </section>
@@ -39,6 +39,7 @@
                     <img class="card__img" src="assets/images/productos/moises.webp" alt="Moises">
                     <h3 class="card__title">Moises</h3>
                     <p class="card__description">El Moises Dogit Cuddle Redondo, le ofrece a tu mascota un lugar de descanso cómodo y acogedor. Está fabricado con materiales de alta calidad, asegurando una textura acolchada y suave, además de tener un diseño moderno que combina con la decoración de tu hogar. Es un modelo ideal si a tu perro le gusta apoyar su cabeza mientras duerme en una superficie levantada</p>
+                    <span>Teomy</span>
                 </article>
 
                 <article class="card">
@@ -48,6 +49,7 @@
                         Dispensador fácil: cada rollo de bolsas cabe perfectamente en el dispensador fácil incluido. Este dispensador mantiene sus bolsos seguros y sin agujeros y también cuenta con una cómoda pulsera para transportarlos fácilmente durante los paseos.
                         Revestimiento resistente al agua: el recubrimiento adicional garantiza que el agua se mantenga fuera y que los olores se mantengan dentro.
                     </p>
+                    <span>Teomy</span>
                 </article>
 
                 <article class="card">
@@ -57,6 +59,7 @@
                         Dispensador fácil: cada rollo de bolsas cabe perfectamente en el dispensador fácil incluido. Este dispensador mantiene sus bolsos seguros y sin agujeros y también cuenta con una cómoda pulsera para transportarlos fácilmente durante los paseos.
                         Revestimiento resistente al agua: el recubrimiento adicional garantiza que el agua se mantenga fuera y que los olores se mantengan dentro.
                     </p>
+                    <span>Teomy</span>
                 </article>
 
                 <article class="card">
@@ -64,41 +67,44 @@
                     <h3 class="card__title">Hueso Mordillo Juguete</h3>
                     <p class="card__description">El perro puede jugar el propósito de limpieza solo, lo que ahorra mucho tiempo al propietario, para que pueda hacer más cosas, y en Al mismo tiempo, el juguete permite al perro hacer algunos deportes que son beneficiosos para la salud del cuerpo y pueden aliviar el estado de ánimo desagradable y liberar El estrés
                     </p>
+                    <span>Teomy</span>
                 </article>
 
                 <article class="card">
                     <img class="card__img" src="assets/images/productos/producto-6.webp" alt="Comedero-Doble">
                     <h3 class="card__title">Comedero Doble</h3>
-                    <p class="card__description"></p>
+                    <p class="card__description">El Comedero Doble de acero inoxidable, cuenta con una base de goma antideslizante para una mejor alimentación perruna.</p>
+                    <span>Teomy</span>
                 </article>
 
                 <article class="card">
                     <img class="card__img" src="assets/images/productos/producto-7_.jpg" alt="bolsa-de-viaje">
                     <h3 class="card__title">Bolsa de viaje</h3>
                     <p class="card__description">Bolsa de viaje para perros recomendada por las aerolíneas, transporte de viaje para mascotas para suministros para cachorros, mochila para perros, bolsa para cachorros con contenedor de comida, impermeable, comederos de Innoshopp</p>
+                    <span>Teomy</span>
                 </article>
             </div>
         </section>
 
         <section id="turnos" class="turnos">
             <h2 class="title-section">Reserva un turno con anticipación</h2>
-            <form class="form" action="#">
+            <form id="form" class="form" action="#">
 
                 <div class="content-input">
                     <label for="fecha">Fecha</label>
-                <input id="fecha" type="datetime-local">
+                <input id="fecha" type="datetime-local" required>
                 </div>
                 
                 <div class="content-input">
                     <label for="hora">Hora</label>
-                    <input type="time">
+                    <input type="time" required>
                 </div>
 
                 <div class="content-input">
                     <label for="nombre">Nombre</label>
-                    <input type="text">
+                    <input type="text" required>
                 </div>
-                <input class="btn" type="button"  value="Enviar">
+                <button class="btn">Enviar</button>
             </form>
         </section>
         <section id="reserva" class="reserva">
