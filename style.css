@@ -1,0 +1,336 @@
+:root{
+    --space-icon: 12px;
+    --height-icon: 4px;
+    --radius-bar: 4px;
+    /* --header-color: #1977149c; */
+    --menu-color: rgb(158, 204, 51);
+}
+
+*{
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    min-height: 100vh;
+}
+
+header{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 1.2em 1em;
+    background-color: black;
+    /* background-color: var(--header-color); */
+    color: whitesmoke;
+
+    display: flex;
+    justify-content: space-between;
+
+    /* Para que el header y por lo tanto el menu-icon no quede abajo al desplegar */
+    z-index: 1;
+}
+
+.menu-icon{
+    background-color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    position: relative;
+}
+
+.bar{
+    background-color: black;
+    width: 80%;
+    height: var(--height-icon);
+    border-radius: var(--radius-bar);
+}
+
+.bar::before,
+.bar::after{
+    content: "";
+    position: absolute;
+    background-color: black;
+    width: 80%;
+    height: var(--height-icon);
+    border-radius: var(--radius-bar);
+}
+
+.bar::before{
+    top: var(--space-icon);
+}
+
+.bar::after{
+    bottom: var(--space-icon);
+}
+
+@media screen and (min-width: 924px) {
+    .menu-icon{
+        display: none;
+    }
+}
+
+.marca{
+    font-size: 3rem;
+    margin: 0;
+}
+
+.menu{
+    position: fixed;
+    list-style: none;
+    margin-top: 0;
+    padding-left: 0;
+    margin-bottom: 0;
+    top: 0;
+    left: 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 50vw;
+    height: 100vh;
+    background-color: red;
+    background-color: var(--menu-color);
+
+    transition: transform .3s;
+    transform: translateX(-100%);
+
+    /* Para que no quede el menu debajo del header */ 
+    padding-top: 50px;
+}
+
+.menu__link{
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+@media screen and (hover:hover){
+    .menu__link{
+        font-size: 1rem;
+    }
+
+    .menu__link:hover{
+        color: brown;
+    }
+}
+
+.menu--active{
+    transform: translateX(0);
+}
+
+@media screen and (min-width: 924px) {
+    .menu{
+        flex-direction: row;
+        align-items: center;
+        transform: translateX(0);
+        width: 100%;
+        height: auto;
+        margin-top: 90px;
+        margin-bottom: 50px;
+        font-size: 1.5rem;
+        /* Volver porque ya el header no puede tapar */
+        padding-top: 0;
+
+        padding: .5em 0em;
+    }
+}
+
+/* Hasta aqui header */
+
+
+.title{
+    text-align: center;
+    font-size: 3rem;
+}
+
+.subtitle{
+    font-size: 1.5rem;
+}
+
+.inicio-description{
+    margin-left: auto;
+    margin-right: auto;
+    font-size: .9rem;
+    width: 50%;
+}
+
+.llama{
+    font-family: monospace;
+}
+
+@media screen and (min-width: 924px) {
+    .llama{
+        font-size: 1rem;
+    }
+}
+
+@media screen and (min-width: 924px) {
+    .title{
+        font-size: 5rem;
+    }
+}
+
+section{
+    min-height: 100vh;
+    padding: 1.5em 0em;
+    font-size: .6rem;
+
+    /* Soluciona navegacion con anclas en movil */
+    padding-top: 6rem;
+}
+
+/* Soluciona error de header encima de secciones al moverse con anclas */
+
+@media screen and (min-width: 924px) {
+    section{
+        padding-top: 8rem;
+    }
+}
+
+/* Colores de secciones */
+
+
+.productos{
+    background-color: rgb(145, 226, 63);
+}
+
+
+.title-section{
+    padding-left: .8em;
+    font-size: 1rem;
+}
+
+@media screen and (min-width: 924px) {
+    .title-section{
+        font-size: 2rem;
+    }
+}
+
+.article-inicio{
+    width: 100%;
+    text-align: center;
+}
+
+.cards{
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.card{
+    width: 300px;
+    box-shadow: 1px 1px 4px black;
+}
+
+@media screen and (min-width: 924px) {
+    .card{
+        width: 500px;
+    }
+}
+
+.card__img{
+    max-width: 100%;
+}
+
+.card__title{
+    padding: .4em 1em;
+    font-size: 1rem;
+}
+.card__description{
+    padding: .4em 1em;
+}
+
+@media screen and (min-width: 924px) {
+    .card__description{
+        font-size: .9rem;
+        line-height: 1.2;
+    }
+}
+
+/* formulario */
+
+.form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 300px;
+    box-shadow: 1px 1px 5px black;
+    height: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: .4em 2em;
+}
+
+.content-input{
+    width: 100%;
+}
+
+label{
+    display: inline-block;
+    width: 20%;
+    text-align: center;
+    font-size: .8rem;
+}
+
+input{
+    width: 70%;
+    margin-left: 10px;
+    padding: .4em .2em;
+}
+
+.btn{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: .4em .8em;
+    border-radius: 10px;
+    border: 1px solid orange;
+}
+
+/* Verificar turno */
+
+.verificar-turno{
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 300px;
+    padding: 1.5em 0em;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px black;
+}
+
+.input-verificar{
+    width: 80%;
+    padding: .4em 1.5em;
+    border-radius: 5px;
+    margin-bottom: 25px;
+}
+
+/* Footer */
+
+footer{
+    font: .8rem;
+    padding-left: 25px;
+    width: 100%;
+    padding: .5em 1em;
+    background-color: var(--menu-color);
+}

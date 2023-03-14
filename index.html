@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noticias El Dia</title>
+</head>
+<body>
+    <header>
+        <div id="menu-icon" class="menu-icon">
+            <div class="bar"></div>
+        </div>
+        <p class="marca">Teomy</p>
+    </header>
+    <nav>
+        <ul id="menu" class="menu">
+            <li class="menu__item"><a href="#inicio" class="menu__link">Inicio</a></li>
+            <li class="menu__item"><a href="#productos" class="menu__link">Productos</a></li>
+            <li class="menu__item"><a href="#turnos" class="menu__link">Turnos</a></li>
+            <li class="menu__item"><a href="#reserva" class="menu__link">Chequear reserva</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="inicio" class="inicio">
+            <h1 class="title">¡Nuestra veterinaria los espera!</h1>
+            <article class="article-inicio">
+                <h2 class="subtitle">Lo que necesitas saber</h2>
+                <p class="inicio-description">Somos la veterinaria numero 1 en el pais. Veni y trae a tu caniño, quedará en exelentes ccondiciones. Ofrecemos servicios de limpieza, corte de pelo, y mucho mas</p>
+                <p class="llama">Llama al <a href="tel:1122736792" class="tel"> 11-2273-6792</a> y asesorate con nosotros</p>
+            </article>
+        </section>
+
+        <section id="productos" class="productos">
+            <h2 class="title-section">Productos</h2>
+            <div class="cards">
+                <article class="card">
+                    <img class="card__img" src="assets/images/productos/moises.webp" alt="Moises">
+                    <h3 class="card__title">Moises</h3>
+                    <p class="card__description">El Moises Dogit Cuddle Redondo, le ofrece a tu mascota un lugar de descanso cómodo y acogedor. Está fabricado con materiales de alta calidad, asegurando una textura acolchada y suave, además de tener un diseño moderno que combina con la decoración de tu hogar. Es un modelo ideal si a tu perro le gusta apoyar su cabeza mientras duerme en una superficie levantada</p>
+                </article>
+
+                <article class="card">
+                    <img class="card__img" src="assets/images/productos/producto-3.jpg" alt="imagen-huesito-porta">
+                    <h3 class="card__title">Huesito porta bolsas</h3>
+                    <p class="card__description">Ideal para el Medio Ambiente: estas bolsas están hechas con material que se degradará al final de su vida útil en presencia de oxígeno mucho más rápido que el plástico ordinario.
+                        Dispensador fácil: cada rollo de bolsas cabe perfectamente en el dispensador fácil incluido. Este dispensador mantiene sus bolsos seguros y sin agujeros y también cuenta con una cómoda pulsera para transportarlos fácilmente durante los paseos.
+                        Revestimiento resistente al agua: el recubrimiento adicional garantiza que el agua se mantenga fuera y que los olores se mantengan dentro.
+                    </p>
+                </article>
+
+                <article class="card">
+                    <img class="card__img" src="assets/images/productos/producto-4.webp" alt="imagen-Comedero-y-Bebedero">
+                    <h3 class="card__title">Comedero Y Bebedero</h3>
+                    <p class="card__description">Ideal para el Medio Ambiente: estas bolsas están hechas con material que se degradará al final de su vida útil en presencia de oxígeno mucho más rápido que el plástico ordinario.
+                        Dispensador fácil: cada rollo de bolsas cabe perfectamente en el dispensador fácil incluido. Este dispensador mantiene sus bolsos seguros y sin agujeros y también cuenta con una cómoda pulsera para transportarlos fácilmente durante los paseos.
+                        Revestimiento resistente al agua: el recubrimiento adicional garantiza que el agua se mantenga fuera y que los olores se mantengan dentro.
+                    </p>
+                </article>
+
+                <article class="card">
+                    <img class="card__img" src="assets/images/productos/producto-5.webp" alt="imagen-Hueso-Mordillo-Juguete">
+                    <h3 class="card__title">Hueso Mordillo Juguete</h3>
+                    <p class="card__description">El perro puede jugar el propósito de limpieza solo, lo que ahorra mucho tiempo al propietario, para que pueda hacer más cosas, y en Al mismo tiempo, el juguete permite al perro hacer algunos deportes que son beneficiosos para la salud del cuerpo y pueden aliviar el estado de ánimo desagradable y liberar El estrés
+                    </p>
+                </article>
+
+                <article class="card">
+                    <img class="card__img" src="assets/images/productos/producto-6.webp" alt="Comedero-Doble">
+                    <h3 class="card__title">Comedero Doble</h3>
+                    <p class="card__description"></p>
+                </article>
+
+                <article class="card">
+                    <img class="card__img" src="assets/images/productos/producto-7_.jpg" alt="bolsa-de-viaje">
+                    <h3 class="card__title">Bolsa de viaje</h3>
+                    <p class="card__description">Bolsa de viaje para perros recomendada por las aerolíneas, transporte de viaje para mascotas para suministros para cachorros, mochila para perros, bolsa para cachorros con contenedor de comida, impermeable, comederos de Innoshopp</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="turnos" class="turnos">
+            <h2 class="title-section">Reserva un turno con anticipación</h2>
+            <form class="form" action="#">
+
+                <div class="content-input">
+                    <label for="fecha">Fecha</label>
+                <input id="fecha" type="datetime-local">
+                </div>
+                
+                <div class="content-input">
+                    <label for="hora">Hora</label>
+                    <input type="time">
+                </div>
+
+                <div class="content-input">
+                    <label for="nombre">Nombre</label>
+                    <input type="text">
+                </div>
+                <input class="btn" type="button"  value="Enviar">
+            </form>
+        </section>
+        <section id="reserva" class="reserva">
+            <h2 class="title-section">Ingresa tus datos para verificar tu turno</h2>
+            <article class="verificar-turno">
+                <input class="input-verificar" type="text" placeholder="Numero de turno">
+                <input class="input-verificar" type="text" placeholder="Nombre de usuario">
+                <input class="btn btn-verificar" type="button" value="Verificar">
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Copyright</p>
+    </footer>
+
+    <script src="js.js"></script>
+</body>
+</html>
